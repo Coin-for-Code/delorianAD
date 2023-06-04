@@ -2,13 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script type="text/javascript" scr="check.js"></script>
     <title>Title</title>
+    <script src="check.js"></script>
 </head>
 <body>
-<h1>Buy the DeLorian 3</h1>
-<label>Write your name down:</label>
-<input type="text" id="text">
-<button onclick="check()">Buy</button>
+    <h1>Buy the DeLorian 3</h1>
+    <form>
+    <label for="text">Write your name down:</label>
+    <input type="text" id="text">
+    </form>
+    <button onclick="check(text.value)">Buy</button>
 </body>
+
 </html>

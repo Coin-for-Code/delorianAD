@@ -1,3 +1,4 @@
-function check(){
-    prompt(text.value);
+function check(a){
+    alert(a);
 }
+
