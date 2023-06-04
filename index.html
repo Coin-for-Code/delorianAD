@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="beauty.css">
     <script src="check.js"></script>
 </head>
 <body>
@@ -11,7 +12,7 @@
     <label for="text">Write your name down:</label>
     <input type="text" id="text">
     </form>
-    <button onclick="check(text.value)">Buy</button>
+    <button onclick="sessionStorage.setItem('name', text.value)"><a href="buy.html">Buy</a></button>
 </body>
 
 </html>
