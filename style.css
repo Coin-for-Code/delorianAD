@@ -1,0 +1,274 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, img, ol, ul, li, table, tr, th, td, a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  
+  /* Дополнительные стили, чтобы обеспечить согласованность в разных браузерах */
+  body {
+    line-height: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+.head-header {
+    position: relative;
+}
+  
+.text-header {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        z-index: 2;
+
+        color: rgb(0, 0, 0);
+
+        font-size: 80px;
+        font-family:  'Roboto', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.golova {
+    background-size: 100%;
+    background-position: center;
+
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    height: auto;
+}
+
+.about-travel-text-delorian {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    width: 100%;
+
+    font-size: 40px;
+    font-family:  'Roboto', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.trapeziumElement p {
+    
+    margin: auto;
+
+    width: 700px;
+    height: 171px;
+
+    font-size: 20px;
+    font-family:  'Roboto', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.about-times-text-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 20%;
+    margin: auto;
+
+    width: 700px;
+    height: 171px;
+
+    font-size: 40px;
+    font-family:  'Roboto', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.text-color-style-white{
+    color: white;
+}
+
+.text-color-style-black{
+    color: rgb(0, 0, 0);
+}
+
+.trapeziumFather{
+    /* display: flex; */
+    position: relative;
+    /* justify-content: center; */
+    align-items: center;
+    height: 600px;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+  .trapeziumElement {
+    position: absolute;
+
+    background-size: cover;
+    background-position: center;
+    
+    padding: 0;
+    margin: 0;
+
+    width: 58vw;
+    height: 600px;
+
+    transition: transform 1s ease-in-out;
+  }
+
+.trapeziumElement1 {
+    left: 0;
+    clip-path: polygon(0% 0, 100% 0, 78% 100%, 0% 100%);
+    background-color: #000000;
+}
+.trapeziumElement2 {
+    right: 0;
+    clip-path: polygon(28% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+
+.trapeziumElement3 {
+    left: 0;
+    clip-path: polygon(0% 0, 78% 0, 100% 100%, 0% 100%);
+}
+.trapeziumElement4 {
+    right: 0;
+    clip-path: polygon(0% 0, 100% 0, 100% 100%, 28% 100%);
+    background-color: white;
+}
+
+.style-photo-class-times-DeLoreanInStoneAge {
+    background-image: url("photos/DeLoreanInStoneAge.png");
+}
+.style-photo-class-times-DeLoreanInEgypt {
+    background-image: url("photos/DeLoreanInEgypt.png");
+}
+.style-photo-class-times-DeLoreanInRome {
+    background-image: url("photos/DeLoreanInRome.png");
+    background-position: center 70%;
+}
+.style-photo-class-times-DeLoreanInMiddleAges {
+    background-image: url("photos/DeLoreanInMiddleAges.png");
+}
+.style-photo-class-times-DeLoreanInCyberpunk {
+    background-image: url("photos/DeLoreanInCyberpunk.png");
+}
+.style-photo-class-times-DeLoreanInFuture {
+    background-image: url("photos/DeLoreanInFuture.png");
+}
+
+.advantages-features {
+    list-style-type: decimal; /* Тип нумерации (десятичные числа) */
+    margin-left: 5%;
+    text-align: left; /* Выравнивание по правой стороне */
+    font-family: 'Roboto', sans-serif; /* Шрифт Roboto */
+    font-size: 30PX;
+}
+
+.advantages-features li {
+    margin-bottom: 40px; /* Отступ между элементами списка */
+}
+
+.d-2 {
+    --c: #CC333F; /* the color */
+    --b: .1em;    /* border length*/
+    --d: 20px;    /* the cube depth */
+    --h: 1.2em;   /* the height */
+    
+    --_s: calc(var(--d) + var(--b));
+    color: #0000;
+    text-shadow: 
+      0 calc(-1*var(--_t,0em)) var(--c), 
+      0 calc(var(--h) - var(--_t,0em)) #fff;
+    border: solid #0000;
+    overflow: hidden;
+    border-width: var(--b) var(--_s) var(--_s) var(--b);
+    background:
+      linear-gradient(var(--c) 0 0) -1px 100%
+       /101% var(--_p,0%) no-repeat,
+      conic-gradient(from -90deg at right var(--d)  bottom var(--d),
+        #0000 90deg, rgb(255 255 255 /0.3) 0 225deg,rgb(255 255 255 /0.6) 0) border-box,
+      conic-gradient(at right var(--_s) bottom var(--_s),
+        var(--c) 270deg,#0000 0) 100% 100%/calc(100% - var(--b)) calc(100% - var(--b))  border-box;
+    transform: translate(var(--d),var(--d));
+    clip-path: 
+      polygon(
+        0% 0%,
+        calc(100% - var(--d)) 0%,
+        calc(100% - var(--d)) 0%,
+        calc(100% - var(--d)) calc(100% - var(--d)),
+        0 calc(100% - var(--d)),
+        0 calc(100% - var(--d))
+      );
+    transition: 0.5s;
+  }
+  .d-2:hover {
+    transform: translate(0,0);
+    clip-path: 
+      polygon(
+        0% 0%,
+        calc(100% - var(--d)) 0%,
+        100% var(--d),
+        100% 100%,
+        var(--d) 100%,
+        0 calc(100% - var(--d))
+      );
+    --_t: var(--h);
+    --_p: 105%;
+  }
+
+.buttom {
+    margin: 200px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    place-content: center;
+    align-items: center;
+}
+
+.buttom h3 {
+    font-family: system-ui, sans-serif;
+    font-size: 3rem;
+    margin:0;
+    cursor: pointer;
+    padding: 0 .1em;
+}
+
+.footeredes {
+    display: block;
+    position: relative;
+
+    height: 200px;
+    width: 100vw;
+
+    background-color: #000000;
+}
+
+.footeredes h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 70px;
+
+    color: white;
+
+    font-size: 40px;
+    font-family:  'Roboto', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
